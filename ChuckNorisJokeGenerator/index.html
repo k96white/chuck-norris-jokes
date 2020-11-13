@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuck Norris Jokes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="getJoke()">
+    <header>
+      <h1>Chuck Norris Jokes Generator</h1>
+      <br />
+      <img src="chuck.png" alt="chuckImage" height="100px" width="150px" />
+    </header>
+    <main>
+      <section id="section1">
+        <br />
+        <h2 style="font-family: 'Black Ops One', cursive">
+          <em>Joke Of the Day</em>
+        </h2>
+        <br />
+        <img src="" id="norris-img" alt="norrisImage" />
+        <br /><br />
+        <div id="joke-box"></div>
+        <br /><br />
+        <button id="btn-joke" onclick="getJoke()">Get Me A Random Joke</button>
+        <br /><br /><br />
+        <div>
+          <label for="categories"><strong>Choose a category:</strong></label>
+          <select name="category" id="category"></select>
+          <button id="btn-category" onclick="getJokeByCategory()">
+            Get the Joke By Category
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
